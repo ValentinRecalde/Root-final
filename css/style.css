@@ -1,0 +1,518 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(14, 12, 12); }
+
+header{
+    background-color: #ce1212;
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.6em;
+    height: 90px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#SOMOS-MAEM .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-lugares{
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-lugares .container{
+    padding: 150px 12px;
+}
+
+#nuestros-lugares h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-lugares p{
+    display: none;
+}
+
+#nuestros-lugares .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747912707932160/20210923_110634.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747912707932160/20210923_110634.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747912707932160/20210923_110634.jpg");
+
+}
+
+#Contacto .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#Contacto li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #SOMOS-MAEM .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #SOMOS-MAEM .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #SOMOS-MAEM h2{
+        margin-top: 0px;
+    }
+
+    #SOMOS-MAEM .img-container{
+        background-image: url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestros-lugares .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-lugares p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-lugares h2{
+        font-size: 4em;
+    }
+
+    #nuestros-lugares h3{
+        margin-top: 0;
+    }
+
+    #nuestros-lugares .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747912707932160/20210923_110634.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747931708137593/20210923_110655.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053748892711272608/20210923_110618.jpg");
+
+    }
+
+    #Contacto{
+        background-image: url("https://cdn.discordapp.com/attachments/646194457372524545/1053747931708137593/20210923_110655.jpg");
+        background-repeat: no-repeat;
+        background-size: 700px 500px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #Contacto .container{
+        text-align: initial;
+    }
+
+    #Contacto ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #Contacto{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+#yacanto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+#yacanto h2{
+    font-size: 5em;
+} 
+
+#Contacto-yacanto .container-yacanto{
+    text-align: initial;
+}
+
+#Contacto-yacanto ul{
+    text-align: initial;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0%;
+}
+
+@media (min-width: 1200px) {
+    #Contacto-yacanto   {
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+.container-yacanto {
+    text-align: initial;
+    padding-bottom: 0px;
+    margin-top: -114px;
+}
+
+.container-yacanto li{
+    font-weight: bold;
+    padding-top: 5%;
+    display: inline;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    display: flex;
+    flex-direction: row;
+    display: inline;
+}
+
+footer .container-yacanto{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+   font-weight: bold;
+    padding-top: 5%;
+    display: inline;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 1135px){
+    .container-yacanto li{
+        display: flex;
+        justify-content: center
+    }
+}
+
+#anisacate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+#anisacate h2{
+    font-size: 5em;
+}
+
+#casona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://cdn.discordapp.com/attachments/646194457372524545/1053747684688793730/20210923_110559.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+#casona h2{
+    font-size: 5em;
+}
+
+body.darkmode{
+    background-color: #000;
+    color: white;
+}
+
+.darkmode span{
+    color: white;
+}
+
+.darkmode footer{
+    background-color: #000;
+    color: white;
+}
+
+.darkmode footer a{
+    color: white;
+}
+
+.darkmode footer p{
+    color: white;
+}
